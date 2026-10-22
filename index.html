@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Jonnakuti Sharath Chandra | Embedded Systems & Robotics Engineer</title>
+  <meta name="description" content="Professional portfolio of Jonnakuti Sharath Chandra - Embedded Systems & Firmware Engineer, Robotics Trainer & Mentor at Leap Robots. Specialized in Embedded C, C++, ESP32, Arduino, IoT, and RTL Design.">
+  <meta name="keywords" content="Jonnakuti Sharath Chandra, Sharath Chandra, Embedded Systems, Robotics Trainer, Leap Robots, Arduino, ESP32, ESP8266, IoT, Verilog, RTL Design, Firmware Engineer, Gudlavalleru ECE">
+  <meta name="author" content="Jonnakuti Sharath Chandra">
+
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:title" content="Jonnakuti Sharath Chandra | Embedded Systems & Robotics Engineer">
+  <meta property="og:description" content="Explore hardware prototypes, IoT systems, edge AI applications, and embedded firmware engineered by Jonnakuti Sharath Chandra.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/sharath-avatar.jpg">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Circuit Canvas Background -->
+  <canvas id="circuit-canvas"></canvas>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Sharath Chandra Portfolio Home">
+        <div class="brand-icon-box">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <div class="brand-text">Sharath<span>.dev</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#simulation-lab" class="nav-link">Live Lab</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fas fa-sun" title="Toggle Light/Dark Theme"></i>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a href="assets/docs/Jonnakuti_Sharath_Chandra_Resume.pdf" download="Jonnakuti_Sharath_Chandra_Resume.pdf" class="btn btn-primary btn-sm" id="nav-resume-btn">
+          <i class="fas fa-download"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Mobile Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       HERO SECTION
+       =================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Column: Intro & Meta -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>OPEN TO EMBEDDED &amp; ROBOTICS ROLES</span>
+          </div>
+
+          <h1 class="hero-title">
+            Jonnakuti<br>Sharath Chandra
+          </h1>
+
+          <div class="hero-typewriter-wrapper">
+            <span>&gt;</span>
+            <span id="typewriter-text"></span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <p class="hero-bio">
+            B.Tech graduate in <strong>Electronics and Communications Engineering</strong> with hands-on expertise in <strong>Embedded Systems, Robotics, IoT, and R&amp;D prototyping</strong>. Currently conducting hands-on engineering training and mentoring future innovators at <strong>Leap Robots, Hyderabad</strong>. Proficient in <strong>Embedded C, C++, microcontrollers (ESP32 / Arduino), hardware interfacing, and RTL Design (Verilog)</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-view-projects">
+              <i class="fas fa-project-diagram"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="#simulation-lab" class="btn btn-secondary" id="hero-sim-lab">
+              <i class="fas fa-play-circle"></i>
+              <span>Interactive Hardware Lab</span>
+            </a>
+            <a href="assets/docs/Jonnakuti_Sharath_Chandra_Resume.pdf" download class="btn btn-outline" id="hero-download-resume">
+              <i class="fas fa-file-pdf"></i>
+              <span>Get Resume</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Row -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Hardware Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Mentees Trained</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">8.3</span>
+              <span class="stat-label">B.Tech ECE CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">Pres.</span>
+              <span class="stat-label">ECSAt Association</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Portrait Card -->
+        <div class="hero-visual">
+          <div class="hero-card-frame">
+            <div class="hero-img-inner">
+              <img src="assets/images/sharath-avatar.png" alt="Jonnakuti Sharath Chandra - Embedded Systems &amp; Robotics Engineer" class="hero-profile-img" id="hero-profile-img">
+              <div class="hero-img-overlay"></div>
+              
+              <!-- Photo View Toggle Button -->
+              <button class="hero-photo-toggle-btn" id="hero-photo-toggle" title="Toggle between Close-up and Full Garden Portrait">
+                <i class="fas fa-expand-alt"></i> <span>Full Portrait</span>
+              </button>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-chip chip-1">
+              <i class="fas fa-microchip"></i>
+              <span>ESP32 &amp; IoT Ready</span>
+            </div>
+            <div class="floating-chip chip-2">
+              <i class="fas fa-bolt"></i>
+              <span>Firmware &amp; Embedded C</span>
+            </div>
+            <div class="floating-chip chip-3">
+              <i class="fas fa-layer-group"></i>
+              <span>RTL Design &amp; Verilog</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       ABOUT SECTION
+       =================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-user-astronaut"></i> Biography &amp; Profile</span>
+        <h2 class="section-title">Driven by Hardware, Powered by Code</h2>
+        <p class="section-desc">Bridging the gap between physical silicon, embedded firmware, and intelligent autonomous systems.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Full Body Photo Card -->
+        <div class="about-card-left">
+          <div class="about-photo-wrapper">
+            <img src="assets/images/sharath-full.png" alt="Sharath Chandra Full Portrait" class="about-full-photo">
+            <div class="about-badge-card">
+              <img src="assets/images/sharath-avatar.png" alt="Avatar Mini" class="badge-avatar-mini">
+              <div class="badge-info">
+                <h5>Jonnakuti Sharath Chandra</h5>
+                <p><i class="fas fa-check-circle"></i> Robotics Trainer &amp; Mentor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Narrative & Personal Metadata -->
+        <div class="about-text-content">
+          <h3>Hello! I am Sharath Chandra</h3>
+          <div class="about-paragraphs">
+            <p>
+              I am an <strong>Electronics and Communications Engineering (ECE)</strong> graduate from Seshadri Rao Gudlavalleru Engineering College with a strong foundation in low-level firmware engineering, sensor interfacing, and robotics actuation.
+            </p>
+            <p>
+              Currently, I serve as a <strong>Robotics Trainer &amp; Technical Mentor at Leap Robots, Hyderabad</strong>. In this role, I direct project-based learning curricula spanning Robotics, Embedded Systems, IoT, and AI, while architecting, fabricating, and debugging real-time embedded hardware platforms utilizing <strong>Arduino, ESP32, and ESP8266</strong>.
+            </p>
+            <p>
+              My technical background is further reinforced by rigorous training in <strong>RTL Design and Verification using Verilog and SystemVerilog at KT Semicon, Hyderabad</strong>, giving me a deep understanding of digital design from transistor-level timing to full SoC firmware.
+            </p>
+          </div>
+
+          <!-- Metadata Table -->
+          <div class="about-details-table">
+            <div class="detail-entry">
+              <span class="detail-key">Location</span>
+              <span class="detail-val">Amaravathi / Hyderabad, India</span>
+            </div>
+            <div class="detail-entry">
+              <span class="detail-key">Current Role</span>
+              <span class="detail-val">Robotics Trainer &amp; Mentor (Leap Robots)</span>
+            </div>
+            <div class="detail-entry">
+              <span class="detail-key">Education</span>
+              <span class="detail-val">B.Tech in ECE (CGPA: 8.3)</span>
+            </div>
+            <div class="detail-entry">
+              <span class="detail-key">Email</span>
+              <span class="detail-val"><a href="mailto:sharathchandrajonnakuti@gmail.com">sharathchandrajonnakuti@gmail.com</a></span>
+            </div>
+            <div class="detail-entry">
+              <span class="detail-key">Phone</span>
+              <span class="detail-val"><a href="tel:+917702341455">+91 7702341455</a></span>
+            </div>
+            <div class="detail-entry">
+              <span class="detail-key">Specialties</span>
+              <span class="detail-val">Embedded C, Microcontrollers, IoT, RTL</span>
+            </div>
+          </div>
+
+          <!-- Languages Spoken -->
+          <div class="languages-pill-row">
+            <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-heading);"><i class="fas fa-globe"></i> Languages:</span>
+            <div class="lang-pill">Telugu <span>(Native)</span></div>
+            <div class="lang-pill">English <span>(Proficient)</span></div>
+            <div class="lang-pill">Hindi <span>(Fluent)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       INTERACTIVE HARDWARE SIMULATION LAB (THE "WOW" SHOWCASE)
+       =================================================================== -->
+  <section class="section lab-section" id="simulation-lab">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-terminal"></i> Interactive Sandbox</span>
+        <h2 class="section-title">Virtual Hardware &amp; Firmware Lab</h2>
+        <p class="section-desc">Experience my embedded systems and robotics logic directly in your browser. Interact with real-time sensor simulators, relay actuators, and microcontroller telemetry.</p>
+      </div>
+
+      <div class="lab-panel">
+        <!-- Navigation Tabs -->
+        <div class="lab-tabs-bar" role="tablist">
+          <button class="lab-tab-btn active" data-tab="tab-irrigation" id="tab-btn-irrigation">
+            <i class="fas fa-seedling"></i>
+            <span>Smart Irrigation (Arduino)</span>
+          </button>
+          <button class="lab-tab-btn" data-tab="tab-smarthome" id="tab-btn-smarthome">
+            <i class="fas fa-house-signal"></i>
+            <span>Smart Home Relays (ESP32)</span>
+          </button>
+          <button class="lab-tab-btn" data-tab="tab-gimbal" id="tab-btn-gimbal">
+            <i class="fas fa-video"></i>
+            <span>Pan-Tilt Gimbal (Servos)</span>
+          </button>
+          <button class="lab-tab-btn" data-tab="tab-rps" id="tab-btn-rps">
+            <i class="fas fa-gamepad"></i>
+            <span>MCU Rock-Paper-Scissors</span>
+          </button>
+          <button class="lab-tab-btn" data-tab="tab-candy" id="tab-btn-candy">
+            <i class="fas fa-robot"></i>
+            <span>AI Sensor Candy Dispenser</span>
+          </button>
+        </div>
+
+        <div class="lab-content-area">
+          <!-- 1. Smart Irrigation Simulator -->
+          <div class="lab-simulator-card active" id="tab-irrigation">
+            <div class="sim-grid">
+              <div class="sim-visual-box">
+                <div class="sim-title-group">
+                  <h4>Automated Closed-Loop Irrigation</h4>
+                  <p>Adjust soil moisture below 40% to observe automated relay tripping and pump activation.</p>
+                </div>
+
+                <div class="plant-soil-container">
+                  <div class="virtual-plant" id="virtual-plant">
+                    <div class="plant-stem"><i class="fas fa-spa"></i></div>
+                    <div class="plant-pot">
+                      <div class="soil-fill" id="soil-fill-level"></div>
+                      <div class="water-spray-anim" id="water-spray"><i class="fas fa-tint"></i><i class="fas fa-tint"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="virtual-pump-unit">
+                    <i class="fas fa-gas-pump" style="font-size: 2rem; color: var(--accent-cyan);"></i>
+                    <span style="font-size: 0.82rem; font-weight: 600;">Submersible 5V Pump</span>
+                    <div class="pump-status-badge off" id="pump-status-badge">
+                      <i class="fas fa-power-off"></i> PUMP IDLE (RELAY: LOW)
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Real-Time Serial Monitor (COM4 @ 9600 baud):</span>
+                  <div class="serial-monitor-box" id="irrigation-serial-log"></div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <div class="sim-controls-box">
+                <div class="sim-title-group">
+                  <h4>Sensor Calibration</h4>
+                  <p>Simulate capacitive soil probe resistance change.</p>
+                </div>
+
+                <div class="sim-slider-group">
+                  <div class="slider-label-row">
+                    <span>Soil Moisture Level</span>
+                    <span class="val" id="moisture-val-display">65%</span>
+                  </div>
+                  <input type="range" class="sim-range" id="moisture-slider" min="0" max="100" value="65">
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); border-radius: 8px; padding: 1rem; border: 1px solid var(--border-subtle); font-size: 0.85rem;">
+                  <strong style="color: var(--accent-cyan);">Firmware Rule:</strong><br>
+                  <code>if (moisture &lt; 40%) { digitalWrite(PUMP_RELAY, HIGH); }</code>
+                </div>
+
+                <button class="btn btn-secondary btn-sm" onclick="document.getElementById('moisture-slider').value = 25; document.getElementById('moisture-slider').dispatchEvent(new Event('input'));">
+                  <i class="fas fa-sun"></i> Simulate Severe Drought (25%)
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="document.getElementById('moisture-slider').value = 80; document.getElementById('moisture-slider').dispatchEvent(new Event('input'));">
+                  <i class="fas fa-cloud-showers-heavy"></i> Simulate Recent Rain (80%)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Smart Home Relays Simulator -->
+          <div class="lab-simulator-card" id="tab-smarthome">
+            <div class="sim-grid">
+              <div class="sim-visual-box">
+                <div class="sim-title-group">
+                  <h4>ESP32 / ESP8266 Multi-Channel Appliance Relay Node</h4>
+                  <p>Toggle electrical loads to watch real-time MQTT telemetry and power calculation.</p>
+                </div>
+
+                <div class="smart-home-switches">
+                  <div class="switch-card" data-appliance="living_lights" data-watts="60">
+                    <div class="switch-meta">
+                      <i class="fas fa-lightbulb"></i>
+                      <div>
+                        <h6>Living Room LED</h6>
+                        <span>60 Watts</span>
+                      </div>
+                    </div>
+                    <div class="toggle-pill"></div>
+                  </div>
+
+                  <div class="switch-card" data-appliance="bedroom_ac" data-watts="1400">
+                    <div class="switch-meta">
+                      <i class="fas fa-fan"></i>
+                      <div>
+                        <h6>Inverter AC Unit</h6>
+                        <span>1400 Watts</span>
+                      </div>
+                    </div>
+                    <div class="toggle-pill"></div>
+                  </div>
+
+                  <div class="switch-card" data-appliance="kitchen_vent" data-watts="120">
+                    <div class="switch-meta">
+                      <i class="fas fa-wind"></i>
+                      <div>
+                        <h6>Exhaust Ventilation</h6>
+                        <span>120 Watts</span>
+                      </div>
+                    </div>
+                    <div class="toggle-pill"></div>
+                  </div>
+
+                  <div class="switch-card" data-appliance="security_floodlight" data-watts="200">
+                    <div class="switch-meta">
+                      <i class="fas fa-shield-alt"></i>
+                      <div>
+                        <h6>Security Floodlight</h6>
+                        <span>200 Watts</span>
+                      </div>
+                    </div>
+                    <div class="toggle-pill"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">MQTT Broker Telemetry Feed:</span>
+                  <div class="serial-monitor-box" id="home-mqtt-log"></div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <div class="sim-controls-box">
+                <div class="sim-title-group">
+                  <h4>Power Telemetry &amp; Hub</h4>
+                  <p>Monitored through ESP32 ADC &amp; current transformer (CT).</p>
+                </div>
+
+                <div style="padding: 1.25rem; background: rgba(0,242,254,0.06); border: 1px solid var(--border-focus); border-radius: var(--radius-md); text-align: center;">
+                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan); text-transform: uppercase;">Total Active Load</span>
+                  <div id="home-power-total" style="font-size: 2.2rem; font-weight: 800; color: #fff; margin-top: 0.25rem;">0 W</div>
+                </div>
+
+                <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+                  <i class="fas fa-info-circle" style="color: var(--accent-cyan);"></i> Each switch triggers an optoisolated mechanical relay on the ESP32 board while publishing JSON telemetry to the cloud dashboard.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Pan-Tilt Gimbal Simulator -->
+          <div class="lab-simulator-card" id="tab-gimbal">
+            <div class="sim-grid">
+              <div class="sim-visual-box">
+                <div class="sim-title-group">
+                  <h4>2-DOF Servo Pan &amp; Tilt Camera Turret</h4>
+                  <p>Dual SG90 servo motor orientation simulation.</p>
+                </div>
+
+                <div class="gimbal-visual-stage">
+                  <div class="gimbal-rig">
+                    <div class="gimbal-camera-eye" id="gimbal-camera-eye">
+                      <div class="camera-lens">
+                        <div class="camera-lens-glare"></div>
+                      </div>
+                      <div class="camera-rec-dot"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Servo PWM Signal Monitor:</span>
+                  <div class="serial-monitor-box" id="gimbal-serial-log"></div>
+                </div>
+              </div>
+
+              <div class="sim-controls-box">
+                <div class="sim-title-group">
+                  <h4>Servo Angle Actuation</h4>
+                  <p>Fine-tune azimuth and elevation angles.</p>
+                </div>
+
+                <div class="sim-slider-group">
+                  <div class="slider-label-row">
+                    <span>Pan (Azimuth 0° - 180°)</span>
+                    <span class="val" id="pan-val-display">90°</span>
+                  </div>
+                  <input type="range" class="sim-range" id="pan-slider" min="0" max="180" value="90">
+                </div>
+
+                <div class="sim-slider-group">
+                  <div class="slider-label-row">
+                    <span>Tilt (Elevation 0° - 90°)</span>
+                    <span class="val" id="tilt-val-display">45°</span>
+                  </div>
+                  <input type="range" class="sim-range" id="tilt-slider" min="0" max="90" value="45">
+                </div>
+
+                <div style="display: flex; gap: 0.6rem;">
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('pan-slider').value = 90; document.getElementById('tilt-slider').value = 45; document.getElementById('pan-slider').dispatchEvent(new Event('input'));">
+                    Center (90°, 45°)
+                  </button>
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('pan-slider').value = 180; document.getElementById('tilt-slider').value = 90; document.getElementById('pan-slider').dispatchEvent(new Event('input'));">
+                    Full Right Look
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Microcontroller RPS Game -->
+          <div class="lab-simulator-card" id="tab-rps">
+            <div class="sim-grid">
+              <div class="sim-visual-box">
+                <div class="sim-title-group">
+                  <h4>Microcontroller Rock-Paper-Scissors Console</h4>
+                  <p>Select your move below to send interrupt signal to the virtual ATmega MCU.</p>
+                </div>
+
+                <div class="rps-console-box">
+                  <!-- Simulated 1602 LCD Display -->
+                  <div class="sim-lcd-display">
+                    <div id="rps-lcd-1">READY FOR INPUT...</div>
+                    <div id="rps-lcd-2">PRESS A BUTTON</div>
+                  </div>
+
+                  <!-- Tactile Push Buttons -->
+                  <div class="rps-btn-group">
+                    <button class="rps-tactile-btn" data-choice="ROCK" id="rps-btn-rock">
+                      <i class="fas fa-hand-back-fist" style="color: #ef4444; font-size: 1.5rem;"></i>
+                      <span>ROCK</span>
+                    </button>
+                    <button class="rps-tactile-btn" data-choice="PAPER" id="rps-btn-paper">
+                      <i class="fas fa-hand" style="color: #3b82f6; font-size: 1.5rem;"></i>
+                      <span>PAPER</span>
+                    </button>
+                    <button class="rps-tactile-btn" data-choice="SCISSORS" id="rps-btn-scissors">
+                      <i class="fas fa-hand-scissors" style="color: #10b981; font-size: 1.5rem;"></i>
+                      <span>SCISSORS</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim); text-align: center;">
+                  Integrated debounced hardware triggers &amp; algorithmic PRNG CPU choice logic.
+                </div>
+              </div>
+
+              <div class="sim-controls-box">
+                <div class="sim-title-group">
+                  <h4>Match Scoreboard</h4>
+                  <p>Stored in virtual MCU EEPROM register.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: center;">
+                  <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 1rem; border-radius: 8px;">
+                    <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan);">YOU (USER)</span>
+                    <div id="rps-score-player" style="font-size: 2.2rem; font-weight: 800; color: #fff;">0</div>
+                  </div>
+                  <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 1rem; border-radius: 8px;">
+                    <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-amber);">ATMEGA MCU</span>
+                    <div id="rps-score-mcu" style="font-size: 2.2rem; font-weight: 800; color: #fff;">0</div>
+                  </div>
+                </div>
+
+                <button class="btn btn-secondary btn-sm" onclick="document.getElementById('rps-score-player').textContent = '0'; document.getElementById('rps-score-mcu').textContent = '0'; document.getElementById('rps-lcd-1').textContent = 'SCORES RESET!'; document.getElementById('rps-lcd-2').textContent = 'READY FOR INPUT...';">
+                  <i class="fas fa-redo"></i> Reset Scoreboard
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. AI Sensor Recognition Candy Dispenser -->
+          <div class="lab-simulator-card" id="tab-candy">
+            <div class="sim-grid">
+              <div class="sim-visual-box">
+                <div class="sim-title-group">
+                  <h4>AI Sensor Recognition &amp; Candy Actuation</h4>
+                  <p>System Challenge: Present the <strong>"Ultrasonic HC-SR04"</strong> to unlock the servo candy chute.</p>
+                </div>
+
+                <div class="candy-sim-box">
+                  <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; background: rgba(0,0,0,0.3); border-radius: 8px;">
+                    <span style="font-size: 0.88rem; font-weight: 600;">Hardware Indicator:</span>
+                    <span class="pump-status-badge off" id="candy-status-led">
+                      <i class="fas fa-circle"></i> STANDBY (AWAITING SENSOR)
+                    </span>
+                  </div>
+
+                  <div class="candy-dispense-stage">
+                    <div class="candy-payload" id="candy-payload">
+                      🍬
+                    </div>
+                  </div>
+
+                  <div id="candy-lcd-status" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-cyan); text-align: center; white-space: pre-line;">
+                    CHALLENGE: Recognize "Ultrasonic HC-SR04"
+                  </div>
+                </div>
+
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">AI Inference Telemetry:</span>
+                  <div class="serial-monitor-box" id="candy-serial-log"></div>
+                </div>
+              </div>
+
+              <div class="sim-controls-box">
+                <div class="sim-title-group">
+                  <h4>Present Sensor to Machine</h4>
+                  <p>Click a sensor module to submit for AI vision verification:</p>
+                </div>
+
+                <div class="sensor-selection-chips">
+                  <button class="sensor-chip-btn" data-sensor="Ultrasonic HC-SR04" id="sensor-btn-correct">
+                    <i class="fas fa-bullseye"></i> Ultrasonic HC-SR04
+                  </button>
+                  <button class="sensor-chip-btn" data-sensor="DHT22 Temp/Humidity">
+                    <i class="fas fa-thermometer-half"></i> DHT22
+                  </button>
+                  <button class="sensor-chip-btn" data-sensor="PIR Motion Sensor">
+                    <i class="fas fa-running"></i> PIR Motion
+                  </button>
+                  <button class="sensor-chip-btn" data-sensor="LDR Light Sensor">
+                    <i class="fas fa-sun"></i> LDR Sensor
+                  </button>
+                  <button class="sensor-chip-btn" data-sensor="10k Ohm Resistor">
+                    <i class="fas fa-microchip"></i> 10k Resistor
+                  </button>
+                </div>
+
+                <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+                  <strong style="color: var(--accent-emerald);">How it works:</strong> In the physical system built for student STEM education, an AI vision classifier examines the presented sensor. A correct classification drives a green LED and micro servo gate; incorrect sensors illuminate a red warning LED with a buzzer tone.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PROJECTS SECTION
+       =================================================================== */
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-laptop-code"></i> Engineering Portfolio</span>
+        <h2 class="section-title">Featured Hardware &amp; Embedded Projects</h2>
+        <p class="section-desc">Practical prototypes engineered with microcontrollers, real-time firmware, sensors, and intelligent actuation.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+        <button class="filter-btn" data-filter="robotics">Robotics &amp; Motion</button>
+        <button class="filter-btn" data-filter="iot">IoT &amp; Smart Systems</button>
+        <button class="filter-btn" data-filter="wearables">Wearables &amp; AI</button>
+        <button class="filter-btn" data-filter="embedded">Embedded Games</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Automatic Plant Watering -->
+        <div class="project-card" data-category="iot">
+          <div class="project-thumb-box">
+            <img src="assets/images/project-plant-watering.jpg" alt="Moisture Sensing Automatic Plant Watering System" class="project-thumb-img">
+            <span class="project-badge-pill"><i class="fas fa-microchip"></i> Arduino Uno</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag-item">Soil Sensors</span>
+              <span class="tag-item">Relay Module</span>
+              <span class="tag-item">Submersible Pump</span>
+              <span class="tag-item">ADC Tuning</span>
+            </div>
+            <h3 class="project-title">Moisture Sensing Automatic Plant Watering System</h3>
+            <p class="project-description">
+              An intelligent irrigation system using Arduino and soil moisture probes to automate watering precisely when needed. Eliminates manual supervision and protects crops from overwatering.
+            </p>
+            <ul class="project-points-list">
+              <li><i class="fas fa-check"></i> Built Arduino-based system with analog soil moisture sensor probes.</li>
+              <li><i class="fas fa-check"></i> Automated pump control with optoisolated relay to prevent root overwatering.</li>
+              <li><i class="fas fa-check"></i> Enabled real-time sensing and threshold actuation for water conservation.</li>
+            </ul>
+            <div class="project-footer-actions">
+              <button class="btn-architecture" data-project="plant-watering">
+                <i class="fas fa-diagram-project"></i>
+                <span>Circuit &amp; Architecture</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Smart Home Automation -->
+        <div class="project-card" data-category="iot">
+          <div class="project-thumb-box">
+            <img src="assets/images/project-smart-home.jpg" alt="IoT-Based Smart Home Automation" class="project-thumb-img">
+            <span class="project-badge-pill"><i class="fas fa-wifi"></i> ESP32 / ESP8266</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag-item">WiFi SoC</span>
+              <span class="tag-item">Multi-Relay</span>
+              <span class="tag-item">DHT22</span>
+              <span class="tag-item">Cloud Dashboard</span>
+            </div>
+            <h3 class="project-title">IoT-Based Smart Home Automation</h3>
+            <p class="project-description">
+              A comprehensive residential automation hub powered by ESP32/ESP8266 microcontrollers. Enables remote electrical appliance control, real-time temperature/humidity telemetry, and cloud monitoring.
+            </p>
+            <ul class="project-points-list">
+              <li><i class="fas fa-check"></i> Developed smart automation system using ESP8266/ESP32 and ambient sensors.</li>
+              <li><i class="fas fa-check"></i> Switched AC appliances via multi-channel optocoupled relay modules.</li>
+              <li><i class="fas fa-check"></i> Implemented IoT connectivity for low-latency remote monitoring and control.</li>
+            </ul>
+            <div class="project-footer-actions">
+              <button class="btn-architecture" data-project="smart-home">
+                <i class="fas fa-diagram-project"></i>
+                <span>Circuit &amp; Architecture</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Pan & Tilt Camera Car -->
+        <div class="project-card" data-category="robotics">
+          <div class="project-thumb-box">
+            <img src="assets/images/project-pantilt-car.jpg" alt="Pan &amp; Tilt Camera Car" class="project-thumb-img">
+            <span class="project-badge-pill"><i class="fas fa-car-side"></i> 4WD Robotics</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag-item">L298N Driver</span>
+              <span class="tag-item">Dual Servos</span>
+              <span class="tag-item">DC Motors</span>
+              <span class="tag-item">Wireless RF</span>
+            </div>
+            <h3 class="project-title">Wireless Pan &amp; Tilt Surveillance Camera Car</h3>
+            <p class="project-description">
+              A mobile robotic vehicle equipped with an elevated 2-DOF Pan &amp; Tilt camera mechanism. Enables 180° horizontal and 90° vertical vantage tracking with wireless skid-steering motor control.
+            </p>
+            <ul class="project-points-list">
+              <li><i class="fas fa-check"></i> Implemented wireless 4-directional motion control with L298N H-bridge driver.</li>
+              <li><i class="fas fa-check"></i> Integrated pan-and-tilt camera mechanism using precision micro servo motors.</li>
+              <li><i class="fas fa-check"></i> Focused on motor control, hardware interfacing, and real-time embedded operation.</li>
+            </ul>
+            <div class="project-footer-actions">
+              <button class="btn-architecture" data-project="pantilt-car">
+                <i class="fas fa-diagram-project"></i>
+                <span>Circuit &amp; Architecture</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Buddy Band Wearable -->
+        <div class="project-card" data-category="wearables">
+          <div class="project-thumb-box">
+            <img src="assets/images/project-buddy-band.jpg" alt="Buddy Band Smart Wearable" class="project-thumb-img">
+            <span class="project-badge-pill"><i class="fas fa-heartbeat"></i> Assistive Wearable</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag-item">OLED Display</span>
+              <span class="tag-item">DFPlayer Mini</span>
+              <span class="tag-item">Haptic Motor</span>
+              <span class="tag-item">Offline Safety</span>
+            </div>
+            <h3 class="project-title">Buddy Band – Smart Safety &amp; Assistance Wearable</h3>
+            <p class="project-description">
+              A standalone assistive wristband designed to dispatch instant emergency and location alerts without relying on GPS satellites or internet connectivity. Features OLED, audio feedback, and haptics.
+            </p>
+            <ul class="project-points-list">
+              <li><i class="fas fa-check"></i> Developed wearable smart band providing emergency and location-based assistance.</li>
+              <li><i class="fas fa-check"></i> Integrated OLED display, push buttons, coin vibration motor, and DFPlayer Mini.</li>
+              <li><i class="fas fa-check"></i> Implemented predefined zone selection and voice alert dispatching without GPS drain.</li>
+            </ul>
+            <div class="project-footer-actions">
+              <button class="btn-architecture" data-project="buddy-band">
+                <i class="fas fa-diagram-project"></i>
+                <span>Circuit &amp; Architecture</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: AI Candy Machine -->
+        <div class="project-card" data-category="wearables">
+          <div class="project-thumb-box">
+            <img src="assets/images/project-candy-machine.jpg" alt="Sensor Recognition Candy Machine with AI" class="project-thumb-img">
+            <span class="project-badge-pill"><i class="fas fa-brain"></i> Edge AI + Actuation</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag-item">AI Classification</span>
+              <span class="tag-item">Micro Servo</span>
+              <span class="tag-item">LED Feedback</span>
+              <span class="tag-item">STEM EdTech</span>
+            </div>
+            <h3 class="project-title">Sensor Recognition Candy Machine with Edge AI</h3>
+            <p class="project-description">
+              An interactive AI-enabled dispensing kiosk designed to gamify hardware education. When students identify and present correct electronic sensors, the system illuminates green and dispenses a treat.
+            </p>
+            <ul class="project-points-list">
+              <li><i class="fas fa-check"></i> Built AI candy machine that recognizes sensor modules entered or shown by users.</li>
+              <li><i class="fas fa-check"></i> Correct sensor matches trigger green LED and servo gate to dispense candy.</li>
+              <li><i class="fas fa-check"></i> Incorrect matches trigger red error LED and lock the chute, ensuring real-time learning.</li>
+            </ul>
+            <div class="project-footer-actions">
+              <button class="btn-architecture" data-project="candy-machine">
+                <i class="fas fa-diagram-project"></i>
+                <span>Circuit &amp; Architecture</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: RPS Console -->
+        <div class="project-card" data-category="embedded">
+          <div class="project-thumb-box">
+            <img src="assets/images/project-rps-console.jpg" alt="Rock Paper Scissors Game Console" class="project-thumb-img">
+            <span class="project-badge-pill"><i class="fas fa-gamepad"></i> Embedded Gaming</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag-item">ATmega MCU</span>
+              <span class="tag-item">1602 LCD</span>
+              <span class="tag-item">Tactile Switches</span>
+              <span class="tag-item">PRNG Engine</span>
+            </div>
+            <h3 class="project-title">Microcontroller Rock Paper Scissors Console</h3>
+            <p class="project-description">
+              A handheld retro gaming device programmed on a microcontroller. Features debounced tactile buttons, real-time LCD character display feedback, and algorithmic game adjudication.
+            </p>
+            <ul class="project-points-list">
+              <li><i class="fas fa-check"></i> Developed interactive Rock Paper Scissors game running on microcontroller.</li>
+              <li><i class="fas fa-check"></i> Integrated 16x2 LCD display to present user move, CPU move, and outcome.</li>
+              <li><i class="fas fa-check"></i> Programmed microcontroller to evaluate winner and update scores with zero latency.</li>
+            </ul>
+            <div class="project-footer-actions">
+              <button class="btn-architecture" data-project="rps-game">
+                <i class="fas fa-diagram-project"></i>
+                <span>Circuit &amp; Architecture</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SKILLS & EXPERTISE MATRIX
+       =================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-microchip"></i> Technical Competencies</span>
+        <h2 class="section-title">Skills &amp; Technology Stack</h2>
+        <p class="section-desc">Comprehensive hardware, firmware, RTL design, and mentorship proficiencies verified across production projects and student training.</p>
+      </div>
+
+      <div class="skills-category-grid">
+        <!-- 1. Embedded Systems & Microcontrollers -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon-box cyan"><i class="fas fa-microchip"></i></div>
+            <h4>Embedded Systems &amp; MCUs</h4>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-chip"><i class="fas fa-check"></i> Arduino (Uno, Nano, Mega)</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> ESP32 WiFi &amp; BLE</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> ESP8266 NodeMCU</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Microcontroller Programming</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> GPIO Configuration</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Interrupts &amp; Timers</div>
+          </div>
+        </div>
+
+        <!-- 2. Programming & Firmware -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon-box emerald"><i class="fas fa-code"></i></div>
+            <h4>Programming &amp; Firmware</h4>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-chip"><i class="fas fa-check"></i> Embedded C</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> C++</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Python (Programming &amp; Scripting)</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Firmware Optimization</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Memory Management</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Arduino IDE &amp; PlatformIO</div>
+          </div>
+        </div>
+
+        <!-- 3. RTL Design & Verification -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon-box purple"><i class="fas fa-layer-group"></i></div>
+            <h4>RTL &amp; Digital Design</h4>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-chip"><i class="fas fa-check"></i> Verilog HDL</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> SystemVerilog</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Digital Circuit Design</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> HDL Simulation &amp; Debugging</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Logic Synthesis</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Timing Analysis</div>
+          </div>
+        </div>
+
+        <!-- 4. Hardware Skills & Interfacing -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon-box amber"><i class="fas fa-tools"></i></div>
+            <h4>Hardware Design &amp; Testing</h4>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-chip"><i class="fas fa-check"></i> Circuit Schematic Design</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> PCB Layout &amp; Prototyping</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Sensor Integration</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Hardware Testing &amp; Debugging</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Electronic Components Selection</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Oscilloscopes &amp; Multimeters</div>
+          </div>
+        </div>
+
+        <!-- 5. Protocols & Robotics Actuation -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon-box cyan"><i class="fas fa-network-wired"></i></div>
+            <h4>Protocols &amp; Actuation</h4>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-chip"><i class="fas fa-check"></i> Serial (UART, I2C, SPI)</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> PWM Waveform Generation</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Motor &amp; Servo Control</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> L298N Dual H-Bridge Drivers</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Relay Modules &amp; Solenoids</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> IoT Protocols &amp; MQTT</div>
+          </div>
+        </div>
+
+        <!-- 6. Mentorship & Leadership -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon-box emerald"><i class="fas fa-users-gear"></i></div>
+            <h4>Leadership &amp; Mentoring</h4>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-chip"><i class="fas fa-check"></i> Technical Training &amp; Mentoring</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Problem Solving &amp; Troubleshooting</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Teamwork &amp; Collaboration</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Project Demonstrations</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Tech Fest Organization</div>
+            <div class="skill-chip"><i class="fas fa-check"></i> Public Speaking &amp; Leadership</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       WORK EXPERIENCE & LEADERSHIP TIMELINE
+       =================================================================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-briefcase"></i> Career Journey</span>
+        <h2 class="section-title">Professional Experience &amp; Leadership</h2>
+        <p class="section-desc">Hands-on technical mentoring, industrial semiconductor training, and student body presidential leadership.</p>
+      </div>
+
+      <div class="timeline-container">
+
+        <!-- Role 1: Leap Robots -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta-bar">
+              <span class="timeline-dates"><i class="fas fa-calendar-alt"></i> 09/2025 – Present</span>
+              <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+            </div>
+            <h3 class="timeline-role">Robotics Trainer &amp; Technical Mentor</h3>
+            <div class="timeline-company"><i class="fas fa-building"></i> Leap Robots</div>
+            <ul class="timeline-bullets">
+              <li><i class="fas fa-chevron-right"></i> Conduct hands-on training in Robotics, Embedded Systems, IoT, AI, and coding for students through practical, project-based learning.</li>
+              <li><i class="fas fa-chevron-right"></i> Design, develop, test, and troubleshoot R&amp;D and embedded-system projects involving microcontrollers, sensors, actuators, motors, servos, and communication modules.</li>
+              <li><i class="fas fa-chevron-right"></i> Develop and implement real-time projects using Arduino, ESP32, ESP8266, and other embedded platforms.</li>
+              <li><i class="fas fa-chevron-right"></i> Mentor students in project development, helping them understand circuit design, programming, hardware interfacing, testing, and debugging.</li>
+              <li><i class="fas fa-chevron-right"></i> Guide students in developing innovative projects and prepare them for project demonstrations, competitions, and exhibitions.</li>
+              <li><i class="fas fa-chevron-right"></i> Conduct technical sessions and provide support in problem-solving, debugging, and improving project functionality.</li>
+              <li><i class="fas fa-chevron-right"></i> Work on projects integrating AI, robotics, IoT, sensors, and automation to create practical solutions.</li>
+              <li><i class="fas fa-chevron-right"></i> Collaborate with students and team members during R&amp;D, prototyping, testing, and project implementation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 2: KT Semicon -->
+        <div class="timeline-item">
+          <div class="timeline-dot emerald"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta-bar">
+              <span class="timeline-dates"><i class="fas fa-calendar-alt"></i> 02/2025 – 09/2025</span>
+              <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+            </div>
+            <h3 class="timeline-role">RTL Design &amp; Verification Trainee</h3>
+            <div class="timeline-company"><i class="fas fa-microchip"></i> KT Semicon</div>
+            <ul class="timeline-bullets">
+              <li><i class="fas fa-chevron-right"></i> Completed specialized industrial training in RTL Design and Verification methodologies.</li>
+              <li><i class="fas fa-chevron-right"></i> Programmed digital circuits using Verilog and SystemVerilog for synthesizable modules.</li>
+              <li><i class="fas fa-chevron-right"></i> Executed digital design simulation, testbench architecture, and waveform debugging.</li>
+              <li><i class="fas fa-chevron-right"></i> Performed logic synthesis, gate-level netlist verification, and timing analysis.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 3: ECSAt President -->
+        <div class="timeline-item">
+          <div class="timeline-dot purple"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta-bar">
+              <span class="timeline-dates"><i class="fas fa-calendar-alt"></i> 07/2024 – 05/2025</span>
+              <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Gudlavalleru, India</span>
+            </div>
+            <h3 class="timeline-role">President</h3>
+            <div class="timeline-company"><i class="fas fa-award"></i> Electronics and Communication Students Association (ECSAt)</div>
+            <ul class="timeline-bullets">
+              <li><i class="fas fa-chevron-right"></i> Led a 20+ member executive council, managing all department technical symposia, hackathons, and cultural events.</li>
+              <li><i class="fas fa-chevron-right"></i> Launched mentorship programs connecting undergraduate engineers with alumni and semiconductor/embedded industry experts.</li>
+              <li><i class="fas fa-chevron-right"></i> Encouraged student participation in inter-college technical competitions, securing multiple prestigious university awards.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 4: ECSAt Vice President -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta-bar">
+              <span class="timeline-dates"><i class="fas fa-calendar-alt"></i> 07/2023 – 06/2024</span>
+              <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Gudlavalleru, India</span>
+            </div>
+            <h3 class="timeline-role">Vice President</h3>
+            <div class="timeline-company"><i class="fas fa-award"></i> Electronics and Communication Students Association (ECSAt)</div>
+            <ul class="timeline-bullets">
+              <li><i class="fas fa-chevron-right"></i> Directed a 15-member organizing committee for annual college tech fests, boosting student attendance and participation by 40%.</li>
+              <li><i class="fas fa-chevron-right"></i> Secured sponsorships from corporate partners, increasing departmental event funding by 20%.</li>
+              <li><i class="fas fa-chevron-right"></i> Conducted practical training sessions on VHDL, IoT, Embedded Systems, and Web Development for junior cohorts.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       EDUCATION & CERTIFICATIONS
+       =================================================================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-graduation-cap"></i> Academic Credentials</span>
+        <h2 class="section-title">Education &amp; Certifications</h2>
+        <p class="section-desc">Academic excellence paired with ongoing professional workshops and industry certifications.</p>
+      </div>
+
+      <div class="edu-cert-grid">
+        <!-- Education Column -->
+        <div class="edu-column">
+          <h3 class="column-heading"><i class="fas fa-user-graduate"></i> Academic Degrees</h3>
+
+          <!-- Degree 1: B.Tech -->
+          <div class="edu-card">
+            <div class="edu-top">
+              <h4 class="edu-institution">Seshadri Rao Gudlavalleru Engineering College</h4>
+              <span class="grade-badge">CGPA: 8.3 / 10</span>
+            </div>
+            <div class="edu-degree">Bachelors of Technology – Electronics &amp; Communication Engineering (ECE)</div>
+            <div class="edu-time"><i class="fas fa-calendar-alt"></i> 11/2021 – 05/2025 | Gudlavalleru, AP</div>
+          </div>
+
+          <!-- Degree 2: Intermediate -->
+          <div class="edu-card">
+            <div class="edu-top">
+              <h4 class="edu-institution">Sri Chaitanya Junior College</h4>
+              <span class="grade-badge">75%</span>
+            </div>
+            <div class="edu-degree">Intermediate – MPC (Maths, Physics, Chemistry)</div>
+            <div class="edu-time"><i class="fas fa-calendar-alt"></i> 07/2019 – 03/2021 | Guntur, AP</div>
+          </div>
+
+          <!-- Degree 3: High School -->
+          <div class="edu-card">
+            <div class="edu-top">
+              <h4 class="edu-institution">Zilla Parishad High School</h4>
+              <span class="grade-badge">CGPA: 8.3 / 10</span>
+            </div>
+            <div class="edu-degree">Secondary School Certificate (SSC)</div>
+            <div class="edu-time"><i class="fas fa-calendar-alt"></i> 07/2018 – 05/2019 | Mandepudi, AP</div>
+          </div>
+        </div>
+
+        <!-- Certifications Column -->
+        <div class="cert-column">
+          <h3 class="column-heading"><i class="fas fa-certificate"></i> Certifications &amp; Workshops</h3>
+
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <h4 class="edu-institution">NPTEL – Introduction to Internet of Things</h4>
+              <span class="grade-badge" style="background: rgba(0, 242, 254, 0.15); color: var(--accent-cyan); border-color: var(--accent-cyan);">Certified</span>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 0.35rem;">National Programme on Technology Enhanced Learning (NPTEL) comprehensive course in IoT architectures, protocols, and sensor interfacing.</p>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <h4 class="edu-institution">Programming with Python</h4>
+              <span class="grade-badge" style="background: rgba(0, 242, 254, 0.15); color: var(--accent-cyan); border-color: var(--accent-cyan);">Certified</span>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 0.35rem;">Python programming fundamentals, data structures, automation scripts, and sensor data logging.</p>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <h4 class="edu-institution">PCB Design Workshop</h4>
+              <span class="grade-badge" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); border-color: var(--accent-amber);">Gudlavalleru</span>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 0.35rem;">Hands-on training in circuit schematic design, PCB component footprint creation, and single/double-layer board routing.</p>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <h4 class="edu-institution">IoT Workshop (Tinkercad)</h4>
+              <span class="grade-badge" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); border-color: var(--accent-amber);">Hands-on</span>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 0.35rem;">Learned foundational IoT concepts and built virtual circuit prototypes and simulations using Tinkercad software.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       RESUME VIEWER & DOWNLOAD HUB
+       =================================================================== -->
+  <section class="section" id="resume">
+    <div class="container">
+      <div class="resume-hub-card">
+        <div class="hub-text">
+          <span class="section-tag"><i class="fas fa-file-pdf"></i> Verified Resume</span>
+          <h3>Looking for a Complete Technical Profile?</h3>
+          <p>
+            Download my complete curriculum vitae with full project histories, academic transcripts, and verified training credentials.
+          </p>
+          <div class="hub-actions">
+            <a href="assets/docs/Jonnakuti_Sharath_Chandra_Resume.pdf" download="Jonnakuti_Sharath_Chandra_Resume.pdf" class="btn btn-primary" id="hub-download-btn">
+              <i class="fas fa-download"></i>
+              <span>Download Official Resume (PDF)</span>
+            </a>
+            <a href="assets/docs/Jonnakuti_Sharath_Chandra_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hub-preview-btn">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Open in New Tab</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hub-preview-box">
+          <div class="hub-file-icon">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <div class="hub-file-meta">
+            <h5>Jonnakuti_Sharath_Chandra_Resume.pdf</h5>
+            <span>PDF Document • 3 Pages • Updated 2026</span>
+          </div>
+          <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 600;">
+            <i class="fas fa-shield-alt"></i> Verified Authenticated Copy
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONTACT SECTION
+       =================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Connect With Me</span>
+        <h2 class="section-title">Let's Build Something Exceptional</h2>
+        <p class="section-desc">Open for full-time opportunities in Embedded Systems, Firmware Development, Robotics, IoT, and R&amp;D engineering.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Cards List -->
+        <div class="contact-info-cards">
+          <!-- Email Card -->
+          <div class="contact-card-item">
+            <div class="contact-icon-sq"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <span>Direct Email</span>
+              <h5>sharathchandrajonnakuti@gmail.com</h5>
+            </div>
+            <button class="copy-btn" data-copy="sharathchandrajonnakuti@gmail.com" title="Copy Email to Clipboard">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="contact-card-item">
+            <div class="contact-icon-sq"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-details">
+              <span>Mobile Phone</span>
+              <h5>+91 7702341455</h5>
+            </div>
+            <button class="copy-btn" data-copy="+917702341455" title="Copy Phone to Clipboard">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+
+          <!-- WhatsApp Card -->
+          <div class="contact-card-item">
+            <div class="contact-icon-sq" style="background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.3);"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-details">
+              <span>WhatsApp Message</span>
+              <h5>Chat Directly on WhatsApp</h5>
+            </div>
+            <a href="https://wa.me/917702341455?text=Hello%20Sharath,%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-card-item">
+            <div class="contact-icon-sq"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-details">
+              <span>Professional Network</span>
+              <h5>linkedin.com/in/sharath-chandra-jonnakuti</h5>
+            </div>
+            <a href="https://linkedin.com/in/sharath-chandra-jonnakuti" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <!-- Location Card -->
+          <div class="contact-card-item">
+            <div class="contact-icon-sq"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details">
+              <span>Location</span>
+              <h5>5-36, Mandepudi, Amaravathi, Palnadu, 522018, India</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Message Form -->
+        <div class="contact-form-card">
+          <h4>Send a Message</h4>
+          <p>Have an embedded role, freelance project, or collaboration? Drop me a note below.</p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Your Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. john@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="e.g. Embedded Systems Engineer Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message Details</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Tell me about the role, technical requirements, or project..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="contact-submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Jonnakuti Sharath Chandra</h4>
+          <p>Embedded Systems &amp; Robotics Engineer • B.Tech ECE</p>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://linkedin.com/in/sharath-chandra-jonnakuti" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:sharathchandrajonnakuti@gmail.com" class="social-btn" title="Send Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+917702341455" class="social-btn" title="Call Sharath">
+            <i class="fas fa-phone-alt"></i>
+          </a>
+          <a href="https://wa.me/917702341455" target="_blank" rel="noopener noreferrer" class="social-btn" title="WhatsApp Message">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Jonnakuti Sharath Chandra. All Rights Reserved. Engineered with precision.
+        </div>
+        <a href="#hero" class="back-to-top-btn" title="Back to Top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       PROJECT ARCHITECTURE MODAL DIALOG
+       =================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modal-dynamic-body">
+        <!-- Dynamically populated by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
